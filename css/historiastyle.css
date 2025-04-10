@@ -93,3 +93,6 @@ border-radius: 8px;
     margin: 20px auto;
     border-radius: 8px;
     }
+    a:hover{
+    color: gray;
+    }
