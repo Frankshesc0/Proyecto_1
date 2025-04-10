@@ -1,0 +1,179 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: white; /* Gris claro de fondo */
+  min-height: 100vh;
+  padding: 100px 0;
+  font-family: "Segoe UI", "system-ui", sans-serif;
+}
+
+.section-title {
+  font-size: 2.5rem;
+  color: #003366; /* Azul institucional */
+  margin-bottom: 50px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.timeline {
+  width: 80%;
+  height: auto;
+  max-width: 800px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+}
+
+.timeline-content {
+  padding: 20px;
+  background: #C7C8CA; /* Fondo blanco para contraste */
+  box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+  color: #333333;
+  padding: 1.75rem;
+  overflow-wrap: break-word !important;
+  margin: 1rem;
+  margin-bottom: 20px;
+  border-left: 5px solid #003366; /* Línea azul a la izquierda */
+}
+
+.timeline-component {
+  margin: 0px 20px 20px 20px;
+}
+
+.timeline-content h3 {
+  margin-bottom: 10px;
+  color: #003366; /* Azul institucional */
+}
+
+.timeline-content p {
+  line-height: 1.5;
+  color: #444444;
+}
+
+/* Imagen de eventos */
+.event-image {
+  width: 100%;
+  max-height: 200px;
+  object-fit: cover;
+  border-radius: 8px;
+  margin-bottom: 15px;
+}
+
+/* Estilo responsive con línea vertical */
+@media (min-width: 768px) {
+  .timeline {
+    display: grid;
+    grid-template-columns: 1fr 6px 1fr;
+  }
+
+  .timeline-middle {
+    position: relative;
+    background-color: #003366; /* Línea vertical azul */
+    width: 6px;
+    height: 100%;
+  }
+
+  .main-middle {
+    opacity: 0;
+  }
+
+  .timeline-circle {
+    position: absolute;
+    top: 0;
+    left: 50%;
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    background-color: #003366; /* Punto azul */
+    border: 3px solid white;
+    transform: translateX(-50%);
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .timeline {
+    padding-left: 20px;
+  }
+
+  .timeline-dot {
+    left: -12px;
+  }
+
+  .timeline-content {
+    font-size: 0.9rem;
+  }
+
+  .timeline-content h3 {
+    font-size: 1rem;
+  }
+}
+
+
+header{
+  width: 100%;
+}
+
+.logo{
+  width: 15%;
+  position: absolute;
+  top: 17%;
+  left: 20%;
+  
+}
+
+.menu{
+  margin-left: 42.15%;
+  list-style: none;
+}
+
+.menu li{
+  padding: 4%;
+  position: relative;
+  display: inline-block;
+}
+
+.menu li:hover{
+  background-color: gray;
+}
+
+.menu li:hover ul{
+  display: block;
+}
+
+.menu li:hover ul li:hover{
+  background-color: gray
+}
+
+.menu ul{
+  background-color: white;
+  text-align: center;
+  display: none;
+  position: absolute;
+  left: 0%;
+  top: 100%;
+}
+
+.menu ul li {
+  width: 92%;
+}
+
+a {
+  color: black;
+  text-decoration: none;
+}
+
+.cuerpo{
+  height: 500px;
+  width: 100%;
+  background-color: gray;
+}
