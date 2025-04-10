@@ -44,7 +44,7 @@ div.curso1 {
     background: white;
     border: 1px solid transparent;
     position: absolute;
-    top: 75%;
+    top: 85%;
     left: 5%;
 }
 div.curso2 {
@@ -53,7 +53,7 @@ div.curso2 {
     background: white;
     border: 1px solid transparent;
     position: absolute;
-    top: 75%;
+    top: 85%;
     left: 29%;
 }
 div.curso3 {
@@ -62,7 +62,7 @@ div.curso3 {
     background: white;
     border: 1px solid transparent;
     position: absolute;
-    top: 75%;
+    top: 85%;
     left: 53%;
 }
 div.curso4 {
@@ -71,7 +71,7 @@ div.curso4 {
     background: white;
     border: 1px solid transparent;
     position: absolute;
-    top: 75%;
+    top: 85%;
     left: 77%;
 }
 
@@ -81,7 +81,7 @@ div.curso5 {
     background: white;
     border: 1px solid transparent;
     position: absolute;
-    top: 210%;
+    top: 215%;
     left: 5%;
 }
 div.curso6 {
@@ -90,7 +90,7 @@ div.curso6 {
     background: white;
     border: 1px solid transparent;
     position: absolute;
-    top: 210%;
+    top: 215%;
     left: 29%;
 }
 div.curso7 {
@@ -99,7 +99,7 @@ div.curso7 {
     background: white;
     border: 1px solid transparent;
     position: absolute;
-    top: 210%;
+    top: 215%;
     left: 53%;
 }
 div.curso8 {
@@ -108,7 +108,7 @@ div.curso8 {
     background: white;
     border: 1px solid transparent;
     position: absolute;
-    top: 210%;
+    top: 215%;
     left: 77%;
 }
 p {
