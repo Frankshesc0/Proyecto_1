@@ -30,43 +30,32 @@ header {
     display: inline-block;
 }
 
-.menu li:hover ul {
-    display: block;
-}
-
-.menu li:hover ul li:hover {
-    background-color: gray
-}
-
-.menu li:hover ul li a:hover{
-    color: white;
-}
-
-.menu ul {
-    background-color: white;
-    text-align: center;
-    display: none;
-    position: absolute;
-    left: 0%;
-    top: 100%;
-}
-
-.menu ul li {
-    width: 92%;
-}
 
 a {
     color: black;
     text-decoration: none;
 }
 
-.cuerpo {
-    height: 500%;
-    width: 100%;
-    background-color: #f5f5f5;
+a:hover{
+   color: #777;
 }
+
+.cuerpo {
+    width: 100%;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+}
+
+.c-item {
+    height: 75vh;
+}
+
+.c-img {
+    object-fit: cover;
+    filter: brightness(0.6);
+}
+
 footer {
     text-align: center;
     margin-top: 4%;
     color: #777;
-  }
+}

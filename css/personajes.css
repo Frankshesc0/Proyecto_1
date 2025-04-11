@@ -37,6 +37,8 @@ header {
 }
 
 .menu li:hover ul li:hover {
+    transition-duration: 1s;
+    transform: scale(1.2);
     background-color: gray
 }
 
@@ -62,6 +64,9 @@ a {
     text-decoration: none;
 }
 
+a:hover{
+    color: #777;
+ }
 
 .titulo-pagina{
     font-size: 2.5rem;
@@ -165,6 +170,12 @@ p {
 div p {
     text-align: justify;
     margin: 10%;
+}
+
+.curso1:hover, .curso2:hover, .curso3:hover, .curso4:hover, .curso5:hover, .curso6:hover, .curso7:hover, .curso8:hover{
+    transform: scale(1.1);
+    z-index: 1;
+    transition-duration: 1s;
 }
 
 .personajes {

@@ -35,10 +35,12 @@ header {
 }
 
 .menu li:hover ul li:hover {
+    transition-duration: 1s;
+    transform: scale(1.2);
     background-color: gray
 }
 
-.menu li:hover ul li a:hover{
+.menu li:hover ul li a:hover {
     color: white;
 }
 
@@ -58,6 +60,10 @@ header {
 a {
     color: black;
     text-decoration: none;
+}
+
+a:hover {
+    color: #777;
 }
 
 section {
@@ -108,11 +114,13 @@ section {
 }
 
 .timeline-component:hover {
-    transform: scale(1.15);
-    margin: 0 10% 10% 10%;
+
+    transition-duration: 1s;
+    transform: scale(1.1);
 }
 
 .timeline-content:hover {
+    transition-duration: 1s;
     border: 0.5em solid #1e1e1e;
 }
 
@@ -177,4 +185,4 @@ footer {
     text-align: center;
     margin-top: 4%;
     color: #777;
-  }
+}
