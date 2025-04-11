@@ -1,4 +1,3 @@
-
 * {
     padding: 0;
     margin: 0;
@@ -37,11 +36,11 @@ a {
     text-decoration: none;
 }
 
-a:hover{
-   color: #777;
+a:hover {
+    color: #777;
 }
 
-.titulo-pagina{
+.titulo-pagina {
     font-size: 2.5rem;
     text-align: center;
     margin-top: 3%;
@@ -58,38 +57,41 @@ div.curso1 {
     height: 110%;
     background: #fff;
     border-radius: 15%;
-    box-shadow: 0px 2px 2px 2px rgba(0,0,0,0.3);
+    box-shadow: 0px 2px 2px 2px rgba(0, 0, 0, 0.3);
     position: absolute;
     top: 40%;
     left: 5%;
 
 }
+
 div.curso2 {
     width: 18%;
     height: 110%;
     background: #fff;
     border-radius: 15%;
-    box-shadow: 0px 2px 2px 2px rgba(0,0,0,0.3);
+    box-shadow: 0px 2px 2px 2px rgba(0, 0, 0, 0.3);
     position: absolute;
     top: 40%;
     left: 29%;
 }
+
 div.curso3 {
     width: 18%;
     height: 110%;
     background: #fff;
     border-radius: 15%;
-    box-shadow: 0px 2px 2px 2px rgba(0,0,0,0.3);
+    box-shadow: 0px 2px 2px 2px rgba(0, 0, 0, 0.3);
     position: absolute;
     top: 40%;
     left: 53%;
 }
+
 div.curso4 {
     width: 18%;
     height: 110%;
     background: #fff;
     border-radius: 15%;
-    box-shadow: 0px 2px 2px 2px rgba(0,0,0,0.3);
+    box-shadow: 0px 2px 2px 2px rgba(0, 0, 0, 0.3);
     position: absolute;
     top: 40%;
     left: 77%;
@@ -100,52 +102,64 @@ div.curso5 {
     height: 110%;
     background: #fff;
     border-radius: 15%;
-    box-shadow: 0px 2px 2px 2px rgba(0,0,0,0.3);
+    box-shadow: 0px 2px 2px 2px rgba(0, 0, 0, 0.3);
     position: absolute;
     top: 160%;
     left: 5%;
 }
+
 div.curso6 {
     width: 18%;
     height: 110%;
     background: #fff;
     border-radius: 15%;
-    box-shadow: 0px 2px 2px 2px rgba(0,0,0,0.3);
+    box-shadow: 0px 2px 2px 2px rgba(0, 0, 0, 0.3);
     position: absolute;
     top: 160%;
     left: 29%;
 }
+
 div.curso7 {
     width: 18%;
     height: 110%;
     background: #fff;
     border-radius: 15%;
-    box-shadow: 0px 2px 2px 2px rgba(0,0,0,0.3);
+    box-shadow: 0px 2px 2px 2px rgba(0, 0, 0, 0.3);
     position: absolute;
     top: 160%;
     left: 53%;
 }
+
 div.curso8 {
     width: 18%;
     height: 110%;
     background: #fff;
     border-radius: 15%;
-    box-shadow: 0px 2px 2px 2px rgba(0,0,0,0.3);
+    box-shadow: 0px 2px 2px 2px rgba(0, 0, 0, 0.3);
     position: absolute;
     top: 160%;
     left: 77%;
 }
+
 p {
-    
+
     font-size: 1em;
     text-align: center;
 }
+
 div p {
     text-align: justify;
     margin: 10%;
 }
 
-.curso1:hover, .curso2:hover, .curso3:hover, .curso4:hover, .curso5:hover, .curso6:hover, .curso7:hover, .curso8:hover{
+.curso1:hover,
+.curso2:hover,
+.curso3:hover,
+.curso4:hover,
+.curso5:hover,
+.curso6:hover,
+.curso7:hover,
+.curso8:hover {
     transform: scale(1.1);
     z-index: 1;
     transition-duration: 1s;
@@ -153,15 +167,15 @@ div p {
 
 .personajes {
     border-radius: 10%;
-    box-shadow: 0px 2px 2px 2px rgba(0,0,0,0.3);
+    box-shadow: 0px 2px 2px 2px rgba(0, 0, 0, 0.3);
     width: 60%;
     position: relative;
     top: 2%;
     left: 20%;
-  }
+}
 
-  footer {
+footer {
     text-align: center;
     margin-top: 130%;
     color: #777;
-  }
+}

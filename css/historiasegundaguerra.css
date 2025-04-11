@@ -89,13 +89,6 @@ p {
   margin: 1% 0;
 }
 
-
-footer {
-  text-align: center;
-  margin-top: 4%;
-  color: #777;
-}
-
 #primeraguerra {
   max-width: 80%;
   height: auto;
@@ -134,4 +127,13 @@ footer {
   display: block;
   margin: 3% auto;
   border-radius: 8px;
+}
+
+footer {
+  margin-top: 4%;
+  color: #777;
+}
+
+footer p{
+  text-align: center;
 }
