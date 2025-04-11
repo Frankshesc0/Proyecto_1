@@ -162,6 +162,12 @@ a {
     background-color: #2980b9;
 }
 
+footer {
+    text-align: center;
+    margin-top: 4%;
+    color: #777;
+  }
+
 /* Responsive */
 @media (max-width: 768px) {
     .contact-form {
