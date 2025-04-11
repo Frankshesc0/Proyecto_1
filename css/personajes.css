@@ -139,8 +139,10 @@ header{
 }
 
 .logo{
-    width: 15%;
+    width: 10%;
     position: absolute;
+    top: 17%;
+    left: 20%;
 }
 
 .menu{
@@ -188,4 +190,13 @@ a {
     height: 500px;
     width: 100%;
     background-color: gray;
+}
+footer{
+    background: -moz-linear-gradient(#FFF, #bbb);
+    background: -o-linear-gradient(#FFF, #bbb);
+    background: -webkit-linear-gradient(#FFF, #bbb);
+    padding-left: 25%;
+    padding-top: 10% ;
+    padding-bottom: 3%;
+    margin-top: 150%;
 }
