@@ -14,7 +14,7 @@ body {
 button {
     width: 50%;
     height: 10%;
-    background: lightblue;
+    background: lightgray;
     font-size: 1em;
     border: none;
     left: 25%;
@@ -30,7 +30,7 @@ button:hover{
 
 }
 h1 {
-    font-size: 4em;
+    font-size: 2.5em;
     text-align: center;
     width: 100%;
     position: absolute;
@@ -142,7 +142,7 @@ header{
 .logo{
     width: 9%;
     position: absolute;
-    margin-top: -10%;
+    margin-top: -10.5%;
     margin-left: -40%;
 }
 
