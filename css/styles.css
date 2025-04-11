@@ -14,7 +14,7 @@ header{
 .logo{
   width: 5%;
   position: absolute;
-  top: 0%;
+  top: 1%;
   left: 20%;
 }
 
@@ -97,10 +97,20 @@ section {
   margin: 2% auto; /* En vez de 1rem */
   margin-bottom: 3%;
   border-right: 0.5em solid #1e1e1e;
+  border-left: 0.5em solid #1e1e1e;
 }
 
 .timeline-component {
   margin: 0 2% 2% 2%; /* En vez de px */
+}
+
+.timeline-component:hover{
+  transform: scale(1.15);
+  margin: 0 10% 10% 10%;
+}
+
+.timeline-content:hover{
+  border: 0.5em solid #1e1e1e;
 }
 
 .timeline-content h3 {

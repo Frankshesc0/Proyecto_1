@@ -1,70 +1,65 @@
 * {
-    margin: 0;
-    padding: 0;
-  }
-
-body {
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-    line-height: 1.6;
-    background-color: #f4f4f4;
-    color: #333;
+  padding: 0;
+  margin: 0;
 }
 
-  header {
-    width: 100%;
-  }
+body {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
 
-  .logo {
-    margin-left: 15%;
-    position: absolute;
-  }
+header {
+  width: 100%;
+}
 
-  .menu {
-    margin-left: 31.20%;
-    list-style: none;
-  }
+.logo {
+  width: 5%;
+  position: absolute;
+  top: 1%;
+  left: 20%;
+}
 
-  .menu li {
-    padding: 4%;
-    position: relative;
-    display: inline-block;
-  }
+.menu {
+  font-size: 0.7rem;
+  margin-left: 40%;
+  list-style: none;
+}
 
-  .menu li:hover {
-    background-color: gray;
-  }
+.menu li {
+  padding: 4%;
+  position: relative;
+  display: inline-block;
+}
 
-  .menu li:hover ul {
-    display: block;
-  }
+.menu li:hover ul {
+  display: block;
+}
 
-  .menu li:hover ul li:hover {
-    background-color: gray;
-  }
+.menu li:hover ul li:hover {
+  background-color: gray
+}
 
-  .menu ul {
-    background-color: white;
-    text-align: center;
-    display: none;
-    position: absolute;
-    left: 0%;
-    top: 100%;
-  }
+.menu li:hover ul li a:hover{
+  color: white;
+}
 
-  .menu ul li {
-    width: 92%;
-  }
+.menu ul {
+  background-color: white;
+  text-align: center;
+  display: none;
+  position: absolute;
+  left: 0%;
+  top: 100%;
+}
 
-  a {
-    color: black;
-    text-decoration: none;
-  }
+.menu ul li {
+  width: 92%;
+}
 
-  .cuerpo {
-    height: 500px;
-    width: 100%;
-    background-color: gray;
-  }
+a {
+  color: black;
+  text-decoration: none;
+}
+
 
   main {
     max-width: 90%;
@@ -85,10 +80,6 @@ body {
     margin: 1% 0;
   }
   
-  ul {
-    margin: 1% 0 2% 2%;
-    list-style-type: disc;
-  }
   
   footer {
     text-align: center;
