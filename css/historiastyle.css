@@ -152,27 +152,3 @@ footer {
     margin: 20px auto;
     border-radius: 8px;
     }
-#segundaguerra{
-    max-width: 80%;
-    height: auto;
-    display: block;
-    margin: 20px auto;
-    border-radius: 8px;
-    }
-#finsegundaguerra{
-    max-width: 80%;
-    height: auto;
-    display: block;
-    margin: 20px auto;
-    border-radius: 8px;
-    }
-#consecguerras{
-    max-width: 80%;
-    height: auto;
-    display: block;
-    margin: 20px auto;
-    border-radius: 8px;
-    }
-    a:hover{
-    color: gray;
-    }
