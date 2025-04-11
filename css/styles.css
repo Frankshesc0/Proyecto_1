@@ -3,15 +3,15 @@
   margin: 0;
 }
 
-body{
+body {
   font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
-header{
+header {
   width: 100%;
 }
 
-.logo{
+.logo {
   width: 5%;
   position: absolute;
   top: 1%;
@@ -19,44 +19,17 @@ header{
 }
 
 .menu {
-  color: #1e1e1e;
   font-size: 0.7rem;
   margin-left: 40%;
   list-style: none;
 }
 
-.menu li{
+.menu li {
   padding: 4%;
   position: relative;
   display: inline-block;
 }
 
-.menu li:hover ul{
-  display: block;
-}
-
-.menu li:hover ul li:hover {
-  transition-duration: 1s;
-  transform: scale(1.2);
-  background-color: gray
-}
-
-.menu li:hover ul li a:hover{
-  color: white;
-}
-
-.menu ul{
-  background-color: white;
-  text-align: center;
-  display: none;
-  position: absolute;
-  left: 0%;
-  top: 100%;
-}
-
-.menu ul li {
-  width: 92%;
-}
 
 a {
   color: black;
@@ -64,7 +37,7 @@ a {
 }
 
 a:hover{
-  color: #777;
+ color: #777;
 }
 
 section {

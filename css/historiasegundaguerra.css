@@ -68,7 +68,7 @@ a:hover{
 
 
 main {
-  width: 90%;
+  width: 80%;
   margin: 0 auto;
   background: white;
   border-radius: 1%;
@@ -96,15 +96,42 @@ footer {
   color: #777;
 }
 
-#introduccionimg,
-#primeraguerra,
-#finprimguerra,
-#segundaguerra,
-#finsegundaguerra,
+#primeraguerra {
+  max-width: 80%;
+  height: auto;
+  display: block;
+  margin: 3% auto;
+  border-radius: 8px;
+}
+
+#finprimguerra {
+  max-width: 80%;
+  height: auto;
+  display: block;
+  margin: 3% auto;
+  border-radius: 8px;
+}
+
+#segundaguerra {
+  max-width: 80%;
+  height: auto;
+  display: block;
+  margin: 3% auto;
+  border-radius: 8px;
+}
+
+#finsegundaguerra {
+  max-width: 80%;
+  height: auto;
+  display: block;
+  margin: 3% auto;
+  border-radius: 8px;
+}
+
 #consecguerras {
   max-width: 80%;
   height: auto;
   display: block;
-  margin: 2% auto;
-  border-radius: 0.8%;
+  margin: 3% auto;
+  border-radius: 8px;
 }

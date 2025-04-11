@@ -1,8 +1,7 @@
-*{
+* {
     padding: 0;
     margin: 0;
 }
-
 
 body {
     font-family: Verdana, Geneva, Tahoma, sans-serif;
@@ -31,32 +30,6 @@ header {
     display: inline-block;
 }
 
-.menu li:hover ul {
-    display: block;
-}
-
-.menu li:hover ul li:hover {
-    transition-duration: 1s;
-    transform: scale(1.2);
-    background-color: gray
-}
-
-.menu li:hover ul li a:hover{
-    color: white;
-}
-
-.menu ul {
-    background-color: white;
-    text-align: center;
-    display: none;
-    position: absolute;
-    left: 0%;
-    top: 100%;
-}
-
-.menu ul li {
-    width: 92%;
-}
 
 a {
     color: black;
@@ -64,10 +37,10 @@ a {
 }
 
 a:hover{
-    color: #777;
- }
+   color: #777;
+}
 
- .titulo-pagina{
+.titulo-pagina{
     font-size: 2.5rem;
     text-align: center;
     margin-top: 3%;
