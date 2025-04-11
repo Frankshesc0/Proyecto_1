@@ -11,17 +11,17 @@ section {
   justify-content: center;
   background-color: white;
   min-height: 100vh;
-  padding: 5% 0; 
+  padding: 5% 0; /* Antes: 100px 0 */
   font-family: "Segoe UI", "system-ui", sans-serif;
 }
 
 .section-title {
   font-size: 2.5rem;
   color: #003366;
-  margin-bottom: 5%; 
+  margin-bottom: 5%; /* Antes: 50px */
   display: flex;
   align-items: center;
-  gap: 1%; 
+  gap: 1%; /* Alternativa proporcional */
 }
 
 .timeline {
@@ -39,13 +39,13 @@ section {
   border-radius: 0.5em;
   color: #333333;
   overflow-wrap: break-word !important;
-  margin: 2% auto; 
+  margin: 2% auto; /* En vez de 1rem */
   margin-bottom: 3%;
   border-left: 0.5em solid #003366;
 }
 
 .timeline-component {
-  margin: 0 2% 2% 2%; /
+  margin: 0 2% 2% 2%; /* En vez de px */
 }
 
 .timeline-content h3 {
@@ -60,7 +60,7 @@ section {
 
 .event-image {
   width: 100%;
-  max-height: 25vh; 
+  max-height: 25vh; /* Mejor usar vh para altura relativa */
   object-fit: cover;
   border-radius: 0.5em;
   margin-bottom: 1em;
@@ -70,7 +70,7 @@ section {
 @media (min-width: 768px) {
   .timeline {
     display: grid;
-    grid-template-columns: 1fr 0.5% 1fr; 
+    grid-template-columns: 1fr 0.5% 1fr; /* Línea delgada en % */
   }
 
   .timeline-middle {

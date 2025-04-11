@@ -3,6 +3,10 @@
     margin: 0;
 }
 
+body{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
 header{
     width: 100%;
 }
@@ -13,7 +17,7 @@ header{
 }
 
 .menu{
-    margin-left: 42.15%;
+    margin-left: 31.20%;
     list-style: none;
 }
 
