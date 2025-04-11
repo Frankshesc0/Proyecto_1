@@ -36,8 +36,8 @@ a {
     text-decoration: none;
 }
 
-a:hover{
-   color: #777;
+a:hover {
+    color: #777;
 }
 
 section {
@@ -155,8 +155,21 @@ section {
     }
 }
 
+hr {
+    border: none;
+    height: 3px;
+    background-color: #e3e3e3;
+    width: 80%;
+    margin: 3% auto;
+    border-radius: 2%;
+}
+
 footer {
     text-align: center;
-    margin-top: 4%;
+    color: #777;
+}
+
+footer a {
+    margin-left: 5%;
     color: #777;
 }

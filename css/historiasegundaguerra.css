@@ -129,11 +129,21 @@ p {
   border-radius: 8px;
 }
 
-footer {
-  margin-top: 4%;
-  color: #777;
+hr {
+  border: none;
+  height: 3px;
+  background-color: #e3e3e3;
+  width: 80%;
+  margin: 3% auto;
+  border-radius: 2%;
 }
 
 footer p{
   text-align: center;
+  color: #777;
+}
+
+footer a{
+  margin-left: 43%;
+  color: #777;
 }

@@ -127,11 +127,22 @@ div.curso5 {
     left: 20%;
 }
 
-footer {
-    margin-top: 4%;
-    color: #777;
-}
-
-footer p {
+hr {
+    border: none;
+    height: 3px;
+    background-color: #e3e3e3;
+    width: 80%;
+    margin: 3% auto;
+    border-radius: 2%;
+  }
+  
+  footer {
+    margin-top: 60%;
     text-align: center;
-}
+    color: #777;
+  }
+  
+  footer a {
+    margin-left: 5%;
+    color: #777;
+  }
