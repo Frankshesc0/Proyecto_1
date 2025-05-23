@@ -1,168 +1,312 @@
-* {
-  padding: 0;
-  margin: 0;
+/* --- New additions/modifications from the second CSS file --- */
+
+/* Universal selector to reset padding and margin */
+* { /* ADDED */
+    padding: 0; /* ADDED */
+    margin: 0; /* ADDED */
 }
 
 body {
-  font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-family: Verdana, Geneva, Tahoma, sans-serif; /* MODIFIED: Changed font-family */
+    margin: 0;
+    padding: 0;
+    background-color: #f0f0f0;
+    line-height: 1.6;
+    color: #333;
+    font-size: 1.0625em;
 }
 
 header {
-  width: 100%;
+    width: 100%;
 }
 
 .logo {
-  width: 5%;
-  position: absolute;
-  top: 1%;
-  left: 20%;
+    width: 5%; /* MODIFIED: Changed width */
+    position: absolute;
+    top: 1%; /* MODIFIED: Changed top position */
+    left: 20%;
 }
 
 .menu {
-  font-size: 0.7rem;
-  margin-left: 40%;
-  list-style: none;
+    font-size: 0.7rem; /* ADDED */
+    margin-left: 40%; /* MODIFIED: Changed margin-left */
+    list-style: none;
 }
 
 .menu li {
-  padding: 4%;
-  position: relative;
-  display: inline-block;
+    padding: 4%;
+    position: relative;
+    display: inline-block;
 }
 
+.menu li:hover {
+    background-color: gray;
+}
+
+.menu li:hover ul {
+    display: block;
+}
+
+.menu li:hover ul li:hover {
+    background-color: gray
+}
+
+.menu ul {
+    background-color: white;
+    text-align: center;
+    display: none;
+    position: absolute;
+    left: 0%;
+    top: 100%;
+}
+
+.menu ul li {
+    width: 92%;
+}
 
 a {
-  color: black;
-  text-decoration: none;
+    color: black;
+    text-decoration: none;
 }
 
-a:hover{
- color: #777;
+a:hover { /* ADDED */
+    color: #777; /* ADDED */
 }
 
-section {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  background-color: white;
-  font-family: Verdana, Geneva, Tahoma, sans-serif;
+.timeline-title {
+    text-align: center;
+    padding: 1.875em 0;
+    color: #555;
+    background-color: #fff;
+    margin-bottom: 1.25em;
+    box-shadow: 0 0.0625em 0.1875em rgba(0, 0, 0, 0.05);
 }
 
-.section-title {
-  font-size: 2.5rem;
-  color: #1e1e1e;
-  margin-bottom: 5%; /* Antes: 50px */
-  display: flex;
-  align-items: center;
-  gap: 1%; /* Alternativa proporcional */
+.timeline-title h1 {
+    font-size: 2.8em;
+    margin: 0;
+    color: #444;
 }
 
-.timeline {
-  width: 80%;
-  max-width: 800px;
-  margin: 0 auto;
-  display: flex;
-  flex-direction: column;
+.timeline-item {
+    background-color: #fff;
+    border-radius: 8%;
+    box-shadow: 0 0.125em 0.3125em rgba(0, 0, 0, 0.08);
+    display: flex;
+    flex-direction: column;
+    min-height: 25em;
+    padding: 3.75em;
+    justify-content: flex-start;
+    overflow: hidden;
 }
 
-.timeline-content {
-  padding: 5%;
-  background: #C7C8CA;
-  box-shadow: 0.5em 0.5em 1em rgba(0, 0, 0, 0.1);
-  border-radius: 0.5em;
-  color: #e3e3e3;
-  overflow-wrap: break-word !important;
-  margin: 2% auto; /* En vez de 1rem */
-  margin-bottom: 3%;
-  border-right: 0.5em solid #1e1e1e;
-  border-left: 0.5em solid #1e1e1e;
+.text-content {
+    flex-grow: 1;
 }
 
-.timeline-component {
-  margin: 0 2% 2% 2%; /* En vez de px */
+.text-content h2 {
+    font-size: 1.3em;
+    margin-top: 0;
+    margin-bottom: 0.5em;
+    color: #333;
 }
 
-.timeline-component:hover{
-  transition-duration: 1s;
-  transform: scale(1.1);
+.text-content p {
+    font-size: 1em;
+    color: #555;
+    line-height: 1.6;
+    margin-top: 0;
+    margin-bottom: 0;
 }
 
-.timeline-content:hover{
-  transition-duration: 1s;
-  border: 0.5em solid #1e1e1e;
-}
-
-.timeline-content h3 {
-  margin-bottom: 1em;
-  color: #1e1e1e;
-}
-
-.timeline-content p {
-  line-height: 1.5;
-  color: #444444;
-}
-
-.event-image {
-  width: 100%;
-  max-height: 25vh; /* Mejor usar vh para altura relativa */
-  object-fit: cover;
-  border-radius: 0.5em;
-  margin-bottom: 1em;
-}
-
-/* Estilo responsive con línea vertical */
-@media (min-width: 768px) {
-  .timeline {
+main {
+    padding: 1.25em;
     display: grid;
-    grid-template-columns: 1fr 0.5% 1fr; /* Línea delgada en % */
-  }
+    grid-template-columns: 1fr 1fr;
+    gap: 1.25em;
+    max-width: 62.5em;
+    margin: 0 auto;
+}
 
-  .timeline-middle {
-    position: relative;
-    background-color: #1e1e1e;
-    width: 0.5%;
+.event-img {
+    width: 100%;
     height: 100%;
-  }
-
-  .main-middle {
-    opacity: 0;
-  }
+    object-fit: cover;
+    border-radius: 8%;
+    margin-bottom: 5%;
 }
 
-@media screen and (max-width: 600px) {
-  .timeline {
-    padding-left: 5%;
-  }
-
-  .timeline-dot {
-    left: -2%;
-  }
-
-  .timeline-content {
-    font-size: 0.9rem;
-  }
-
-  .timeline-content h3 {
-    font-size: 1rem;
-  }
+main > div:nth-child(odd) {
+    grid-column: 1 / 2;
 }
 
-hr {
-  border: none;
-  height: 3px;
-  background-color: #e3e3e3;
-  width: 80%;
-  margin: 3% auto;
-  border-radius: 2%;
+main > div:nth-child(even) {
+    grid-column: 2 / 3;
 }
 
-footer {
-  text-align: center;
-  color: #777;
+.cuerpo {
+    height: 500px;
+    width: 100%;
+    background-color: gray;
 }
 
-footer a {
-  margin-left: 5%;
-  color: #777;
+/* ADDED: Section styles */
+section { /* ADDED */
+    display: flex; /* ADDED */
+    flex-direction: column; /* ADDED */
+    align-items: center; /* ADDED */
+    justify-content: center; /* ADDED */
+    background-color: white; /* ADDED */
+    font-family: Verdana, Geneva, Tahoma, sans-serif; /* ADDED */
+}
+
+.section-title { /* ADDED */
+    font-size: 2.5rem; /* ADDED */
+    color: #1e1e1e; /* ADDED */
+    margin-bottom: 5%; /* ADDED */
+    display: flex; /* ADDED */
+    align-items: center; /* ADDED */
+    gap: 1%; /* ADDED */
+}
+
+.timeline { /* ADDED */
+    width: 80%; /* ADDED */
+    max-width: 800px; /* ADDED */
+    margin: 0 auto; /* ADDED */
+    display: flex; /* ADDED */
+    flex-direction: column; /* ADDED */
+}
+
+.timeline-content { /* ADDED */
+    padding: 5%; /* ADDED */
+    background: #C7C8CA; /* ADDED */
+    box-shadow: 0.5em 0.5em 1em rgba(0, 0, 0, 0.1); /* ADDED */
+    border-radius: 0.5em; /* ADDED */
+    color: #e3e3e3; /* ADDED */
+    overflow-wrap: break-word !important; /* ADDED */
+    margin: 2% auto; /* ADDED */
+    margin-bottom: 3%; /* ADDED */
+    border-right: 0.5em solid #1e1e1e; /* ADDED */
+    border-left: 0.5em solid #1e1e1e; /* ADDED */
+}
+
+.timeline-component { /* ADDED */
+    margin: 0 2% 2% 2%; /* ADDED */
+}
+
+.timeline-component:hover { /* ADDED */
+    transition-duration: 1s; /* ADDED */
+    transform: scale(1.1); /* ADDED */
+}
+
+.timeline-content:hover { /* ADDED */
+    transition-duration: 1s; /* ADDED */
+    border: 0.5em solid #1e1e1e; /* ADDED */
+}
+
+.timeline-content h3 { /* ADDED */
+    margin-bottom: 1em; /* ADDED */
+    color: #1e1e1e; /* ADDED */
+}
+
+.timeline-content p { /* ADDED */
+    line-height: 1.5; /* ADDED */
+    color: #444444; /* ADDED */
+}
+
+.event-image { /* ADDED */
+    width: 100%; /* ADDED */
+    max-height: 25vh; /* ADDED */
+    object-fit: cover; /* ADDED */
+    border-radius: 0.5em; /* ADDED */
+    margin-bottom: 1em; /* ADDED */
+}
+
+/* ADDED: Responsive styles with vertical line */
+@media (min-width: 768px) { /* ADDED */
+    .timeline { /* ADDED */
+        display: grid; /* ADDED */
+        grid-template-columns: 1fr 0.5% 1fr; /* ADDED */
+    }
+
+    .timeline-middle { /* ADDED */
+        position: relative; /* ADDED */
+        background-color: #1e1e1e; /* ADDED */
+        width: 0.5%; /* ADDED */
+        height: 100%; /* ADDED */
+    }
+
+    .main-middle { /* ADDED */
+        opacity: 0; /* ADDED */
+    }
+}
+
+@media screen and (max-width: 600px) { /* ADDED */
+    .timeline { /* ADDED */
+        padding-left: 5%; /* ADDED */
+    }
+
+    .timeline-dot { /* ADDED */
+        left: -2%; /* ADDED */
+    }
+
+    .timeline-content { /* ADDED */
+        font-size: 0.9rem; /* ADDED */
+    }
+
+    .timeline-content h3 { /* ADDED */
+        font-size: 1rem; /* ADDED */
+    }
+}
+
+hr { /* ADDED */
+    border: none; /* ADDED */
+    height: 3px; /* ADDED */
+    background-color: #e3e3e3; /* ADDED */
+    width: 80%; /* ADDED */
+    margin: 3% auto; /* ADDED */
+    border-radius: 2%; /* ADDED */
+}
+
+footer { /* ADDED */
+    text-align: center; /* ADDED */
+    color: #777; /* ADDED */
+}
+
+footer a { /* ADDED */
+    margin-left: 5%; /* ADDED */
+    color: #777; /* ADDED */
+}
+
+@media (max-width: 48em) {
+    main {
+        grid-template-columns: 1fr;
+        padding: 0.9375em;
+        gap: 0.9375em;
+    }
+
+    main > div {
+        grid-column: 1 / 2 !important;
+    }
+
+    .timeline-title h1 {
+        font-size: 2.2em;
+    }
+
+    .timeline-item {
+        min-height: auto;
+        padding: 0.625em;
+    }
+
+    .event-img {
+        height: 9.375em;
+    }
+
+    .text-content h2 {
+        font-size: 1.2em;
+    }
+
+    .text-content p {
+        font-size: 9.375em;
+    }
 }
