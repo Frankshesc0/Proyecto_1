@@ -8,6 +8,7 @@ body {
 }
 
 header {
+    background-color: #212529;
     width: 100%;
 }
 
@@ -19,6 +20,7 @@ header {
 }
 
 .menu {
+    margin-bottom: 0%;
     font-size: 0.7rem;
     margin-left: 40%;
     list-style: none;
@@ -32,7 +34,7 @@ header {
 
 
 a {
-    color: black;
+    color: #e3e3e3;
     text-decoration: none;
 }
 
