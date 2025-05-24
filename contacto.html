@@ -5,27 +5,35 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Contacto - Páginas de Historia</title>
     <link rel="stylesheet" href="css/contactostyles.css">
+    <link rel="stylesheet" href="css/validation.css">
 </head>
 <body>
     <header>
-        <img class="logo" src="img/logoudb-fotor-bg-remover-2025052319829.png" alt="logoudb" width="5%">
-        <ul class="menu">
-            <li><a href="index.html">Inicio</a></li>
-            <li><a href="historia.html">Primer Guerra Mundial</a>
-                <ul>
-                    <li><a href="PrimeraGuerraLT.html">Linea de tiempo</a></li>
-                    <li><a href="Personajes importantes primera guerra.html">Personajes importantes</a></li>
+        <div class="header-container">
+            <img class="logo" src="img/logoudb-fotor-bg-remover-2025052319829.png" alt="logoudb">
+            <button class="menu-toggle" aria-label="Toggle menu">☰</button>
+            <nav>
+                <ul class="menu">
+                    <li><a href="index.html">Inicio</a></li>
+                    <li class="menu-item-has-children">
+                        <a href="historia.html">Primer Guerra Mundial</a>
+                        <ul class="submenu">
+                            <li><a href="PrimeraGuerraLT.html">Linea de tiempo</a></li>
+                            <li><a href="Personajes importantes primera guerra.html">Personajes importantes</a></li>
+                        </ul>
+                    </li>
+                    <li class="menu-item-has-children">
+                        <a href="historiasegundaguerra.html">Segunda Guerra Mundial</a>
+                        <ul class="submenu">
+                            <li><a href="Segundaguerra.html">Linea de tiempo</a></li>
+                            <li><a href="Personajes importantes segunda guerra.html">Personajes importantes</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="integrantes.html">Integrantes</a></li>
+                    <li><a href="contacto.html">Comunicate</a></li>
                 </ul>
-            </li>
-            <li><a href="historiasegundaguerra.html">Segunda Guerra Mundial</a>
-                <ul>
-                    <li><a href="Segundaguerra.html">Linea de tiempo</a></li>
-                    <li><a href="Personajes importantes segunda guerra.html">Personajes importantes</a></li>
-                </ul>
-            </li>
-            <li><a href="integrantes.html">Integrantes</a></li>
-            <li><a href="contacto.html">Comunicate</a></li>
-        </ul>
+            </nav>
+        </div>
     </header>
     <main class="contact-container">
         <section class="contact-form">
@@ -35,23 +43,33 @@
             <form id="contactForm">
                 <div class="form-group">
                     <label for="nombre">Nombre:</label>
-                    <input type="text" id="nombre" name="nombre" required>
+                    <input type="text" id="nombre" name="nombre" 
+                           pattern="[a-zA-ZáéíóúÁÉÍÓÚñÑ\s]+" 
+                           title="Solo letras y espacios" required>
+                    <div class="error-message">Solo se permiten letras y espacios</div>
                 </div>
                 
                 <div class="form-group">
                     <label for="apellido">Apellido:</label>
-                    <input type="text" id="apellido" name="apellido" required>
+                    <input type="text" id="apellido" name="apellido" 
+                           pattern="[a-zA-ZáéíóúÁÉÍÓÚñÑ\s]+" 
+                           title="Solo letras y espacios" required>
+                    <div class="error-message">Solo se permiten letras y espacios</div>
                 </div>
                 
                 <div class="form-group">
                     <label for="email">Correo Electrónico:</label>
                     <input type="email" id="email" name="email" required>
+                    <div class="error-message">Ingrese un correo electrónico válido</div>
                 </div>
                 
                 <div class="form-group">
                     <label for="telefono">Teléfono (opcional):</label>
-                    <input type="tel" id="telefono" name="telefono">
+                    <input type="tel" id="telefono" name="telefono"
+                           pattern="[0-9]+" 
+                           title="Solo números">
                     <span class="optional-text">Opcional</span>
+                    <div class="error-message">Solo se permiten números</div>
                 </div>
                 
                 <div class="form-group checkbox-group">
@@ -65,11 +83,11 @@
     </main>
     <hr>
     <footer>
-      <a href="#menu">Volver al inicio de pagina</a>
-      <br><br>
-      <p>&copy; Universidad Don Bosco 2025. Realizado por Alumnos de Técnico en Ingeniería en Computación</p>
-      <p>Email de contacto ternesto267@gmail.com</p>
-      <br>
+      <a href="#menu" class="back-to-top">Volver al inicio de pagina</a>
+      <div class="footer-content">
+        <p>&copy; Universidad Don Bosco 2025. Realizado por Alumnos de Técnico en Ingeniería en Computación</p>
+        <p>Email de contacto: <a href="mailto:ternesto267@gmail.com">ternesto267@gmail.com</a></p>
+      </div>
     </footer>
 </body>
 </html>
