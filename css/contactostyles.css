@@ -40,23 +40,24 @@ header {
 }
 
 .navbar-nav li:hover ul {
-    display: block;
+    display: block !important;
 }
-
-.navbar-nav li:hover ul li:hover {
-    transition-duration: 2s;
-    background-color: #343a40;
+ 
+.navbar-nav li:hover ul li:hover{
+    transition-duration: 2s !important;
+    background-color: #343a40 !important;
 }
 
 .submenu {
-    list-style: none;
-    background-color: #212529;
+    list-style: none !important;
+    background-color: #212529 !important;
     text-align: center;
     display: none;
     z-index: 9;
     position: absolute;
-    padding-left: 0%;
+    padding: 0% !important;
     top: 100%;
+
 }
 
 
