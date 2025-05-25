@@ -127,18 +127,25 @@ v
     color: #333;
 }
 
+.btn{
+    background-color: #1c2a38 !important;
+}
+
 .btn-primary {
-    background-color: #2b3d50;
     border: none;
     padding: 3% 5%;
     font-size: 90%;
 }
 
 .btn-primary:hover {
-    background-color: #1c2a38;
+    background-color: #2b3d50 !important;
 }
 
 @media (max-width: 993px) {
+    .d-block{
+        width: 100%;
+        height: 100%;
+    }
 
     footer {
         display: none;
