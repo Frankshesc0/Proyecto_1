@@ -164,6 +164,9 @@ a:hover{
 
 /* Responsive */
 @media (max-width: 768px) {
+  .navbar-nav li:hover ul li:hover {
+    background-color: #212529 !important;
+}
   .contact-form {
     padding: 1.5rem;
   }
@@ -178,6 +181,9 @@ a:hover{
 }
 
 @media (max-width: 480px) {
+  .navbar-nav li:hover ul li:hover {
+    background-color: #212529 !important;
+}
   .contact-form {
     padding: 1rem;
   }
@@ -213,6 +219,10 @@ footer a {
 }
 
 @media (max-width: 993px) {
+
+  .navbar-nav li:hover ul li:hover {
+    background-color: #212529 !important;
+}
 
     footer {
         display: none;

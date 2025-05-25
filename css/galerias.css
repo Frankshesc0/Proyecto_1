@@ -164,6 +164,9 @@ footer a {
 } 
 
 @media (max-width: 993px) {
+    .navbar-nav li:hover ul li:hover {
+    background-color: #212529;
+}
 
     footer {
         display: none;
