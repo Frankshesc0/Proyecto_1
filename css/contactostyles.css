@@ -162,42 +162,7 @@ a:hover{
   background-color: #acacac;
 }
 
-/* Responsive */
-@media (max-width: 768px) {
-  .navbar-nav li:hover ul li:hover {
-    background-color: #212529 !important;
-}
-  .contact-form {
-    padding: 1.5rem;
-  }
 
-  .white-header h1 {
-    font-size: 1.5rem;
-  }
-
-  .contact-form h2 {
-    font-size: 1.5rem;
-  }
-}
-
-@media (max-width: 480px) {
-  .navbar-nav li:hover ul li:hover {
-    background-color: #212529 !important;
-}
-  .contact-form {
-    padding: 1rem;
-  }
-
-  .form-group input[type="text"],
-  .form-group input[type="email"],
-  .form-group input[type="tel"] {
-    padding: 0.6rem;
-  }
-
-  .submit-btn {
-    padding: 0.8rem;
-  }
-}
 
 hr {
   border: none;
@@ -218,7 +183,19 @@ footer a {
   color: #777;
 }
 
-@media (max-width: 993px) {
+@media (max-width: 768px ) {
+  .submenu {
+        list-style: none;
+        background-color: #212529;
+        text-align: left;
+        display: none;
+        z-index: 9;
+        position: relative;
+        padding-left: 0%;
+    }
+}
+
+@media (max-width: 993px ) {
 
   .navbar-nav li:hover ul li:hover {
     background-color: #212529 !important;
@@ -239,11 +216,12 @@ footer a {
 
     .submenu {
         list-style: none;
-        background-color: #212529;
+        background-color: #212529 !important;
         text-align: left;
         display: none;
         z-index: 9;
-        position: relative;
+        position: relative !important;
         padding-left: 0%;
+        box-shadow: none !important;
     }
 }
