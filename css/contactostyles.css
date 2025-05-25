@@ -183,17 +183,7 @@ footer a {
   color: #777;
 }
 
-@media (max-width: 768px ) {
-  .submenu {
-        list-style: none;
-        background-color: #212529;
-        text-align: left;
-        display: none;
-        z-index: 9;
-        position: relative;
-        padding-left: 0%;
-    }
-}
+
 
 @media (max-width: 993px ) {
 
@@ -218,10 +208,10 @@ footer a {
         list-style: none;
         background-color: #212529 !important;
         text-align: left;
-        display: none;
+        display: block !important;
         z-index: 9;
         position: relative !important;
-        padding-left: 0%;
+        padding-left: 10% !important;
         box-shadow: none !important;
     }
 }

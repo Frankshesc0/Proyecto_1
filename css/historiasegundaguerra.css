@@ -165,9 +165,9 @@ footer a{
         list-style: none;
         background-color: #212529;
         text-align: left;
-        display: none;
+        display: block;
         z-index: 9;
         position: relative;
-        padding-left: 0%;
+        padding-left: 10%;
     }
 }
