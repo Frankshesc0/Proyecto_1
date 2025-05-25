@@ -212,8 +212,13 @@ hr {
   
   footer a {
     margin-left: 5%;
-    color: #777;
+    color: #777 !important;
   }
+
+#message{
+    color: #777;
+}
+
 
   @media (max-width: 993px) {
 
