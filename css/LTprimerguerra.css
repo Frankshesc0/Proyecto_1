@@ -64,7 +64,6 @@ a:hover {
     text-align: center;
     padding: 1.875em 0;
     color: #555;
-    background-color: #f0f0f0;
     margin-bottom: 1.25em;
 
 }
@@ -72,7 +71,7 @@ a:hover {
 .timeline-title h1 {
     font-size: 2.8em;
     margin: 0;
-    color: #444;
+    color: #1e1e1e;
 }
 
 .timeline-item {
@@ -93,11 +92,12 @@ a:hover {
 }
 
 .text-content {
+    
     flex-grow: 1;
 }
 
 .text-content h2 {
-    font-size: 1.3em;
+    font-size: 1.2em !important;
     margin-top: 0;
     margin-bottom: 0.5em;
     color: #333;
@@ -217,17 +217,15 @@ section {
     margin-bottom: 1em;
 }
 
-@media (min-width: 768px) {
+@media (min-width: 420px) {
     .timeline {
         display: grid;
         grid-template-columns: 1fr 0.5% 1fr;
     }
 
     .timeline-middle {
-        position: relative;
         background-color: #1e1e1e;
         width: 0.5%;
-        height: 100%;
     }
 
     .main-middle {
@@ -235,13 +233,31 @@ section {
     }
 }
 
-@media screen and (max-width: 600px) {
-    .timeline {
-        padding-left: 5%;
+
+@media (max-width: 420px) {
+    main {
+        grid-template-columns: 1fr;
+        padding: 1em;
     }
 
-    .timeline-dot {
-        left: -2%;
+    .timeline-title h1 {
+        font-size: 2.2em;
+    }
+
+    .timeline-item {
+        padding: 1em;
+    }
+
+    .event-img {
+        height: 150px;
+    }
+
+    .text-content h2 {
+        font-size: 1.1em;
+    }
+
+    .text-content p {
+        font-size: 1em;
     }
 
     .timeline-content {
@@ -253,59 +269,13 @@ section {
     }
 }
 
-hr {
-    border: none;
-    height: 3px;
-    background-color: #e3e3e3;
-    width: 80%;
-    margin: 3% auto;
-    border-radius: 2%;
-}
 
-footer {
-    text-align: center;
-    color: #777;
-}
-
-footer a {
-    margin-left: 5%;
-    color: #777;
-}
-
-@media (max-width: 48em) {
-    main {
-        grid-template-columns: 1fr;
-        padding: 0.9375em;
-        gap: 0.9375em;
-    }
-
-    main > div {
-        grid-column: 1 / 2 !important;
-    }
-
-    .timeline-title h1 {
-        font-size: 2.2em;
-    }
-
-    .timeline-item {
-        min-height: auto;
-        padding: 0.625em;
-    }
-
-    .event-img {
-        height: 9.375em;
-    }
-
-    .text-content h2 {
-        font-size: 1.2em;
-    }
-
-    .text-content p {
-        font-size: 9.375em;
-    }
-}
 
 @media (max-width: 993px) {
+
+    .navbar-nav li:hover ul li:hover {
+    background-color: #212529;
+}
 
     footer {
         display: none;
